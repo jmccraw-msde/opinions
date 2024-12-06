@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>SBOE Search Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Search --> 
+        <div class="sboe-search">
+            <input class="mdgov_searchInputBox" id="searchInputBox" name="q" type="text" placeholder="Please be descriptive in your search" onkeypress="return onEnter(event)">
+            <div onclick="GoogleSearch()" class="mdgov_searchButton btn btn-primary searchButtonDiv">
+                <button type="button" onclick="GoogleSearch()">Search</button>
+            </div>
+        </div>
+
+        <!-- Button Group -->
+        <div class="radio-container">
+            <label class="radio-option" id="option1" title="Results will include the exact phrase as entered in the search">
+                <input type="radio" name="toggle" value="option1">
+                Must contain <span style="text-decoration: underline;">EXACT phrase</span>
+            </label>
+            <label class="radio-option" id="option2" title="Results will include all the words entered in the search">
+                <input type="radio" name="toggle" value="option2">
+                Must contain <span style="text-decoration: underline;"> ALL words</span>
+            </label>
+            <button id="resetButton">Reset</button>
+        </div>        
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

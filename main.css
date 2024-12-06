@@ -1,0 +1,66 @@
+/* styles.css */
+
+.wrapper {
+    margin: 0 auto;
+    width: 1500px;
+}
+
+.sboe-search {
+    display: flex;
+    justify-content: center;
+
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+    margin-top: 20px;
+}
+
+.radio-option {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.radio-option.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+button {
+    color: white;
+    background-color: #bd0934;
+    border: none;
+    margin: 0 20px 0 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.mdgov_searchInputBox {
+    width: 45%;
+    height: 55px;
+    display: block;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+}
